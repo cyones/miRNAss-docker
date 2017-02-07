@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Milton Pividori <miltondp@gmail.com>
+MAINTAINER Cristian Yones <cyones@sinc.unl.edu.ar>
 
 # Web Demo Builder - Base Docker image for R 3.1
 
