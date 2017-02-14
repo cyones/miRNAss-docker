@@ -76,7 +76,7 @@ RUN Rscript /install.r RSpectra 0.12-0
 RUN Rscript /install.r CORElearn 1.48.0
 RUN Rscript /install.r cluster 2.0.5
 RUN Rscript /install.r rpart 4.1-10
-
+RUN Rscript /install.r R2HTML 2.3.2
 
 # Create a new user "developer".
 # It will get access to the X11 session in the host computer
