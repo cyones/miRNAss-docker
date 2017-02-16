@@ -58,7 +58,7 @@ RUN Rscript /install.r dichromat 2.0-0
 RUN Rscript /install.r colorspace 1.2-6
 RUN Rscript /install.r munsell 0.4.2
 RUN Rscript /install.r labeling 0.3
-RUN Rscript /install.r scales 0.2.4
+RUN Rscript /install.r scales 0.4.1
 RUN Rscript /install.r proto 0.3-10
 RUN Rscript /install.r ggplot2 2.0.0
 RUN Rscript /install.r iterators 1.0.7
@@ -67,7 +67,7 @@ RUN Rscript /install.r caret 6.0-41
 RUN Rscript /install.r doParallel 1.0.10
 RUN Rscript /install.r e1071 1.6-4
 RUN Rscript /install.r gridExtra 0.9.1
-RUN Rscript /install.r Matrix 1.2-0
+RUN Rscript /install.r Matrix 1.2-8
 RUN Rscript /install.r segmented 0.5-1.1
 RUN Rscript /install.r mixtools 1.0.2
 
