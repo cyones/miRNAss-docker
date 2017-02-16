@@ -64,7 +64,7 @@ RUN Rscript /install.r ggplot2 1.0.1
 RUN Rscript /install.r iterators 1.0.7
 RUN Rscript /install.r foreach 1.4.2
 RUN Rscript /install.r caret 6.0-41
-RUN Rscript /install.r doParallel 1.0.8
+RUN Rscript /install.r doParallel 1.0.10
 RUN Rscript /install.r e1071 1.6-4
 RUN Rscript /install.r gridExtra 0.9.1
 RUN Rscript /install.r Matrix 1.2-0
@@ -78,10 +78,24 @@ RUN Rscript /install.r cluster 2.0.5
 RUN Rscript /install.r rpart 4.1-10
 RUN Rscript /install.r R2HTML 2.3.2
 RUN Rscript /install.r AUC 0.3.0
+# igraph dependencies
+RUN Rscript /install.r xtable 1.8-2
+RUN Rscript /install.r pkgmaker 0.22
+RUN Rscript /install.r registry 0.3
+RUN Rscript /install.r rngtools 1.2.4
+RUN Rscript /install.r gridBase 0.4-7
+RUN Rscript /install.r NMF 0.20.6
+RUN Rscript /install.r irlba 2.1.2
+RUN Rscript /install.r igraph 1.0.1
+RUN Rscript /install.r plotrix 3.6-4
+# ggnetwork and dependencies
+RUN Rscript /install.r statnet.common 3.3.0
+RUN Rscript /install.r ggrepel 0.6.5
+RUN Rscript /install.r network 1.13.0
+RUN Rscript /install.r sna 2.4
 
 # Create a new user "developer".
 # It will get access to the X11 session in the host computer
-
 ENV uid=1000
 ENV gid=${uid}
 
