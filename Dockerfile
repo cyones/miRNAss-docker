@@ -51,7 +51,8 @@ RUN Rscript /install.r car 2.0-25
 RUN Rscript /install.r plyr 1.8.1
 RUN Rscript /install.r digest 0.6.8
 RUN Rscript /install.r gtable 0.1.2
-RUN Rscript /install.r stringr 0.6.2
+RUN Rscript /install.r stringi 1.1.2
+RUN Rscript /install.r stringr 1.1.0
 RUN Rscript /install.r reshape2 1.4.1
 RUN Rscript /install.r RColorBrewer 1.1-2
 RUN Rscript /install.r dichromat 2.0-0
