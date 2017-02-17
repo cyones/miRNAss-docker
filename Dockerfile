@@ -22,6 +22,9 @@ RUN DEBIAN_FRONTEND=noninteractive \
 # r packages
 COPY install.r /
 
+# package added by Cristian Yones (dependencies conflict)
+RUN Rscript /install.r magrittr 1.5
+# original packages
 RUN Rscript /install.r BiocInstaller 1.16.5 ${bioconductor_url}
 RUN Rscript /install.r preprocessCore 1.28.0 ${bioconductor_url}
 RUN Rscript /install.r BiocGenerics 0.12.1 ${bioconductor_url}
@@ -73,7 +76,6 @@ RUN Rscript /install.r segmented 0.5-1.1
 RUN Rscript /install.r mixtools 1.0.2
 
 # packages added by Cristian Yones
-RUN Rscript /install.r magrittr 1.5
 RUN Rscript /install.r registry 0.3
 RUN Rscript /install.r RSpectra 0.12-0
 RUN Rscript /install.r CORElearn 1.48.0
