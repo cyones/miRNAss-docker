@@ -24,6 +24,7 @@ RUN > CRAN.R
 RUN echo 'install.packages("Rcpp", repos="http://cran.r-project.org")' >> CRAN.R
 RUN echo 'install.packages("Matrix", repos="http://cran.r-project.org")' >> CRAN.R
 RUN echo 'install.packages("RSpectra", repos="http://cran.r-project.org")' >> CRAN.R
+RUN echo 'install.packages("CORElearn", repos="http://cran.r-project.org")' >> CRAN.R
 RUN echo 'install.packages("AUC", repos="http://cran.r-project.org")' >> CRAN.R
 RUN echo 'install.packages("network", repos="http://cran.r-project.org")' >> CRAN.R
 RUN echo 'install.packages("sna", repos="http://cran.r-project.org")' >> CRAN.R
